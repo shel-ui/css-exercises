@@ -2,26 +2,28 @@ body {
   background: #eee;
   font-family: sans-serif;
 }
-
-.card {
+.card { /*whole container*/
   width: 400px;
   background: #fff;
   margin: 16px auto;
+  padding: 5px;
 }
-
-.title {
-  background: #e3f4ff;
+.button-container { /*third div*/
+  text-align: center;
 }
-
-.content {
-  background: #e3f4ff;
-}
-
-.button-container {
-  background: #e3f4ff;
-}
-
-button {
+button { /*big button*/
   background: white;
   border: 1px solid #eee;
+  display: block;
+  margin: 0 auto;
+}
+/* Grouping */
+.content, .button-container, .title, button {     /* Gap */
+  padding: 12px;
+}
+.content, .button-container, .title {    /* Space between */
+  margin: 10px;
+}
+.title, .content, .button-container {   /* Color */
+  background-color: #e3f4ff;
 }
