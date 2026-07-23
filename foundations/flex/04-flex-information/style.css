@@ -1,5 +1,6 @@
 body {
   font-family: 'Courier New', Courier, monospace;
+  height: 94vh;
 }
 
 img {
@@ -10,7 +11,49 @@ img {
 .title {
   font-size: 36px;
   font-weight: 900;
+  display: flex;
+  justify-content: center;
 }
+
+header {
+  margin: 0 0 32px 0
+}
+
+main {
+  padding: 50px;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 52px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+
+/* I added extras hehe, from my past paper notes */
+@media (min-width: 1px) and (max-width: 256px) {
+  body {
+    background-color: red;
+  }
+}
+
+@media (min-width: 256px) and (max-width: 580px) {
+  section {
+    flex-wrap: wrap;
+  }
+}
+
+
 
 /* do not edit this footer */
 .footer {
